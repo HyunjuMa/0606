@@ -3,6 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-a = np.load('abnormal.npy')
+a = np.load(r'abnormal.npy')
 
-print a
+print a.itemsize
