@@ -5,4 +5,5 @@ import matplotlib.dates as mdates
 
 a = np.load(r'abnormal.npy')
 
-print a
+print len(a)
+print a.itemsize
