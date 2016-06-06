@@ -1,11 +1,8 @@
-import pandas as pd
+
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
-start_date = '2003-05-01'
-y = np.load(r'c:\python27\abnormal.npy')
-x = pd.date_range(start=start_date, periods=len(y), freq='D')
+a = np.load('abnormal.npy')
 
-
-plt.plot(x,y,'.')
-plt.show()
+print a
