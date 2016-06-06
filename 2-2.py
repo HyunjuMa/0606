@@ -5,8 +5,10 @@ import pandas as pd
 start_date = '2002-01-01'
 
 x = np.load(r'abnormal.npy')
-cx = np.cumsum(x)
 
+sor_x = np.sort(x)
+y= np.arange(sor_x.size)/float(len(sor_x))
 
-plt.plot(x,cx, 0.2)
+plt.plot(sor_x, y)
+
 plt.show()
