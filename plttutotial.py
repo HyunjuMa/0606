@@ -1,5 +1,8 @@
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
+
+matplotlib.use('Agg')
 
 def f(t):
 	return np.exp(-t) * np.cos(2*np.pi*t)
