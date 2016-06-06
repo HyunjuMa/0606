@@ -1,8 +1,0 @@
-
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
-
-a = np.load(r'abnormal.npy')
-
-print a.itemsize
